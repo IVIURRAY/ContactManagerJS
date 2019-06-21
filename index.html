@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>A Contact Manager</title>
+    <script src="file:///C:/AAA_HAYDN/Code/Playground/edx-javascript/contact-manager.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form onsubmit="return formSubmitted();">
+            <fieldset>
+                <legend>Personal informations</legend>
+                <label>
+                    Name :
+                    <input type="text" id="name" required>
+                </label>
+                <label>
+                    Email :
+                    <input type="email" id="email" required>
+                </label>
+                <br>
+                <button>Add new Contact</button>
+            </fieldset>
+        </form>
+    <p>List of contacts:</p>
+    <div id="contacts"></div>
+    <p>
+        <button onclick="emptyList();">Empty</button> 
+        <button onclick="cm.save();">Save</button> 
+        <button onclick="loadList();">Load</button>
+    </p>
+</body>
+</html>
